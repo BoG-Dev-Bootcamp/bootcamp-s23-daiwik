@@ -1,1 +1,1 @@
-I writing this message on terminal using thre "nano hello.txt" command 
+I am  writing this message on terminal using the "nano hello.txt" command 
