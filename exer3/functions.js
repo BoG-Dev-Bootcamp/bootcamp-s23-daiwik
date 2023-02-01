@@ -6,7 +6,12 @@
     Example: [1, 2, 3] -> [3, 2, 1]
 */
 function reverseArr(arr) {
+    var returnList = [];
+    for(var i = arr.length - 1; i >= 0; i--){
+        returnList.push(arr[i]);
+    }
 
+    return returnList;
 }
 
 /*
@@ -26,6 +31,13 @@ function reverseArr(arr) {
 */
 function objectKeysToArr(object) {
 
+    var returnVar = []; 
+    for(var key of Object.entries(object)){
+        returnVar.push(key[0]);  
+    }
+
+    return returnVar; 
+    
 }
 
 /*
@@ -52,7 +64,15 @@ function objectKeysToArr(object) {
     }
 */
 function combineObjects(object1, object2) {
-
+    var element = {}; 
+    for(var key of Object.entries(object1)){
+        element[key[0]] = key[1]; 
+    }
+    for(var key of Object.entries(object2)){
+        element[key[0]] = key[1]; 
+    }
+    
+    return element; 
 }
 
 
